@@ -21,7 +21,7 @@ public class RemovePlayer extends JFrame implements ActionListener {
             try {
                 Conn c1 = new Conn();
                 String rollnumber = rollNumber.getText();
-                String query = "DELETE FROM " + currentSport + " where RollNumber = " + rollnumber + "";
+                String query = "DELETE FROM " + currentSport + " where Roll = " + rollnumber + "";
                 c1.s.executeUpdate(query);
                 JOptionPane.showMessageDialog(null, "Player Removed");
                 System.out.println("Player Removed");

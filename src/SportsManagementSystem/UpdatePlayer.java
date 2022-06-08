@@ -26,7 +26,7 @@ public class UpdatePlayer extends JFrame implements ActionListener {
                 String dept = (String)departmentCB.getSelectedItem();
 
                 Conn c2 = new Conn();
-                String query = "UPDATE "+currentSport+" SET PlayerName = '"+playername+"', Age = '"+age+"', ContactNumber = '"+number+"', City = '"+hometown+"', Gender = '"+gender+"', Department = '"+dept+"' WHERE RollNumber = '"+roll+"';";
+                String query = "UPDATE "+currentSport+" SET PlayerName = '"+playername+"', Age = '"+age+"', number = '"+number+"', hometown = '"+hometown+"', Gender = '"+gender+"', dept = '"+dept+"' WHERE Roll = '"+roll+"';";
                 c2.s.executeUpdate(query);
                 JOptionPane.showMessageDialog(null, "Player Record Updated");
                 System.out.println(" Player Record Updated");
